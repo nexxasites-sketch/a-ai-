@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Casa do Açaí | Amandita</title>
+<meta name="description" content="Casa do Açaí Amandita — açaí, cupuaçu, sorvetes e combinações irresistíveis. Peça pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="top">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Casa do Açaí início"><img src="assets/logo.jpg" alt="Casa do Açaí"></a>
+    <nav class="navlinks" aria-label="Navegação principal">
+      <a href="#cardapio">Cardápio</a><a href="#monte">Monte seu açaí</a><a href="#combos">Combos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+    </nav>
+    <button class="cart-btn" id="openCart">🛒 <span>Seu pedido</span><b id="cartCount">0</b></button>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="hero-glow"></div>
+ <div class="container hero-grid">
+  <div class="hero-copy">
+   <div class="eyebrow">🍇 CASA DO AÇAÍ • AMANDITA</div>
+   <h1>Seu momento fica<br><em>mais gostoso</em> com açaí.</h1>
+   <p>Açaí cremoso, cupuaçu, sorvetes e acompanhamentos para montar do seu jeito. Escolha seu tamanho e peça pelo WhatsApp.</p>
+   <div class="hero-actions"><a class="btn primary" href="#cardapio">Ver cardápio <span>→</span></a><a class="btn ghost" href="https://wa.me/5517981817159?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Casa%20do%20A%C3%A7a%C3%AD." target="_blank" rel="noopener">Pedir no WhatsApp</a></div>
+   <div class="hero-meta"><span>✓ Feito para você</span><span>✓ Peça pelo WhatsApp</span><span>✓ Açaí & cupuaçu</span></div>
+  </div>
+  <div class="hero-art">
+   <div class="blob"></div><div class="spark s1">✦</div><div class="spark s2">✧</div>
+   <div class="product-card"><img src="assets/produto.jpg" alt="Copo de açaí da Casa do Açaí"><div class="product-tag">IRRESISTÍVEL<br><strong>do primeiro ao último colher!</strong></div></div>
+   <div class="float-card"><span>🍓</span><div><strong>Monte do seu jeito</strong><small>Escolha seus acompanhamentos</small></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="trust"><div class="container trust-row"><span>🍇 AÇAÍ</span><i></i><span>🍦 SORVETES</span><i></i><span>🥄 CUPUAÇU</span><i></i><span>🍓 ACOMPANHAMENTOS</span></div></section>
+
+<section class="section" id="cardapio">
+ <div class="container">
+  <div class="section-head"><div><span class="kicker">CARDÁPIO</span><h2>Escolha seu sabor favorito</h2></div><p>Opções para matar a vontade — do copo individual aos combos.</p></div>
+  <div class="tabs"><button class="tab active" data-tab="acai">Açaí</button><button class="tab" data-tab="cup">Cupuaçu</button><button class="tab" data-tab="combos">Combos</button></div>
+  <div class="menu-panel active" id="tab-acai">
+   <article class="menu-card featured"><div class="menu-image"><img src="assets/logo.jpg" alt="Açaí Casa do Açaí"></div><div class="menu-info"><span class="pill">MAIS PEDIDO</span><h3>Açaí puro</h3><p>Cremoso e geladinho, pronto para receber seus acompanhamentos.</p><div class="sizes"><button data-add="Açaí 250ml" data-price="10">250ml <b>R$ 10,00</b></button><button data-add="Açaí 300ml" data-price="12">300ml <b>R$ 12,00</b></button><button data-add="Açaí 400ml" data-price="13">400ml <b>R$ 13,00</b></button><button data-add="Açaí 500ml" data-price="14">500ml <b>R$ 14,00</b></button></div></div></article>
+  </div>
+  <div class="menu-panel" id="tab-cup"><article class="menu-card featured"><div class="menu-image"><img src="assets/cupuaçu.jpg" alt="Cupuaçu Casa do Açaí"></div><div class="menu-info"><span class="pill gold">NOVIDADE</span><h3>Cupuaçu</h3><p>Uma opção cremosa e especial para variar o seu pedido.</p><div class="sizes"><button data-add="Cupuaçu 250ml" data-price="13">250ml <b>R$ 13,00</b></button><button data-add="Cupuaçu 300ml" data-price="14">300ml <b>R$ 14,00</b></button><button data-add="Cupuaçu 400ml" data-price="16">400ml <b>R$ 16,00</b></button><button data-add="Cupuaçu 500ml" data-price="18">500ml <b>R$ 18,00</b></button></div></div></article></div>
+  <div class="menu-panel" id="tab-combos"><div class="combo-grid"><article class="simple-card"><span>COMBO 01</span><h3>300ml + 2 acompanhamentos</h3><strong>R$ 20,00</strong><button data-add="Combo 01" data-price="20">Adicionar</button></article><article class="simple-card"><span>COMBO 02</span><h3>400ml + 2 acompanhamentos</h3><strong>R$ 23,00</strong><button data-add="Combo 02" data-price="23">Adicionar</button></article><article class="simple-card"><span>COMBO 03</span><h3>500ml + 2 acompanhamentos</h3><strong>R$ 25,00</strong><button data-add="Combo 03" data-price="25">Adicionar</button></article><article class="simple-card"><span>MARMITA</span><h3>Marmita especial</h3><strong>R$ 26,00</strong><button data-add="Marmita" data-price="26">Adicionar</button></article></div></div>
+ </div>
+</section>
+
+<section class="dark-section" id="monte">
+ <div class="container builder-grid">
+  <div><span class="kicker light">PERSONALIZE</span><h2>Monte seu açaí.<br><em>Do seu jeito.</em></h2><p>Escolha o tamanho, a base e os acompanhamentos. No final, o site monta sua mensagem pronta para enviar no WhatsApp.</p><div class="check-list"><span>✓ Combinações personalizadas</span><span>✓ Frutas e acompanhamentos</span><span>✓ Pedido direto no WhatsApp</span></div></div>
+  <div class="builder">
+   <div class="builder-top"><span>SEU AÇAÍ</span><span id="builderPrice">R$ 10,00</span></div>
+   <label>Tamanho</label><div class="choice-row" id="sizesChoice"><button class="choice active" data-size="250ml" data-base="10">250ml <small>R$10</small></button><button class="choice" data-size="300ml" data-base="12">300ml <small>R$12</small></button><button class="choice" data-size="400ml" data-base="13">400ml <small>R$13</small></button><button class="choice" data-size="500ml" data-base="14">500ml <small>R$14</small></button></div>
+   <label>Base</label><div class="choice-row"><button class="choice base active" data-base-type="Açaí">🍇 Açaí</button><button class="choice base" data-base-type="Cupuaçu">🥄 Cupuaçu</button></div>
+   <label>Acompanhamentos <small>(R$ 2 cada)</small></label><div class="toppings"><label><input type="checkbox" value="Banana"> Banana</label><label><input type="checkbox" value="Morango"> Morango</label><label><input type="checkbox" value="Granola"> Granola</label><label><input type="checkbox" value="Leite condensado"> Leite condensado</label><label><input type="checkbox" value="Paçoca"> Paçoca</label><label><input type="checkbox" value="Leite em pó"> Leite em pó</label></div>
+   <button class="builder-add" id="addCustom">Adicionar ao pedido <span>→</span></button>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="combos"><div class="container"><div class="section-head"><div><span class="kicker">COMBINAÇÕES</span><h2>Para quem quer caprichar</h2></div><p>Os combos ajudam a escolher sem complicação.</p></div><div class="feature-grid"><article><img src="assets/combos.jpg" alt="Combos de açaí"><div><h3>Combos de açaí</h3><p>Monte seu copo com acompanhamentos e aproveite.</p></div></article><article><img src="assets/cupuaçu.jpg" alt="Cupuaçu"><div><h3>Especial Cupuaçu</h3><p>Uma alternativa cremosa e cheia de sabor.</p></div></article><article><img src="assets/promo.jpg" alt="Promoção Casa do Açaí"><div><h3>Tem novidade?</h3><p>Acompanhe as novidades e horários no Instagram.</p></div></article></div></div></section>
+
+<section class="section gallery-section"><div class="container"><div class="section-head"><div><span class="kicker">NA CASA</span><h2>Um pouco do nosso universo</h2></div><a class="text-link" href="https://instagram.com/amandita_casa_do_acai" target="_blank" rel="noopener">@amandita_casa_do_acai ↗</a></div><div class="gallery"><img src="assets/produto.jpg" alt="Produto"><img src="assets/cupuaçu.jpg" alt="Cupuaçu"><img src="assets/promo.jpg" alt="Promoção"><img src="assets/novidade.jpg" alt="Novidade"><img src="assets/combos.jpg" alt="Combos"><img src="assets/estreia.jpg" alt="Casa do Açaí"></div></div></section>
+
+<section class="about" id="sobre"><div class="container about-grid"><div class="about-photo"><img src="assets/logo.jpg" alt="Logo Casa do Açaí"></div><div><span class="kicker">CASA DO AÇAÍ • AMANDITA</span><h2>Mais que um copo de açaí.</h2><p>Um cantinho para transformar aquela vontade de doce em um momento gostoso. Escolha seu tamanho, combine seus sabores e aproveite.</p><div class="about-stats"><div><strong>4</strong><span>tamanhos de açaí</span></div><div><strong>4</strong><span>opções de cupuaçu</span></div><div><strong>∞</strong><span>combinações</span></div></div></div></div></section>
+
+<section class="faq section"><div class="container narrow"><div class="section-head center"><div><span class="kicker">DÚVIDAS</span><h2>Perguntas frequentes</h2></div></div><details><summary>Como faço meu pedido?</summary><p>Escolha uma opção no cardápio ou monte seu açaí. Depois, abra o carrinho e envie o pedido pelo WhatsApp.</p></details><details><summary>Posso escolher os acompanhamentos?</summary><p>Sim. No montador, selecione os acompanhamentos que quiser e eles entram automaticamente na mensagem do pedido.</p></details><details><summary>Quais tamanhos estão disponíveis?</summary><p>Açaí e cupuaçu aparecem em 250ml, 300ml, 400ml e 500ml, conforme o cardápio divulgado.</p></details><details><summary>Onde acompanho as novidades?</summary><p>O Instagram da Casa do Açaí Amandita é @amandita_casa_do_acai.</p></details></div></section>
+
+<section class="cta" id="contato"><div class="container cta-box"><div><span class="kicker light">BATEU A VONTADE?</span><h2>Seu próximo açaí<br>está a uma mensagem.</h2></div><div class="cta-actions"><a class="btn white" href="https://wa.me/5517981817159?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Casa%20do%20A%C3%A7a%C3%AD." target="_blank" rel="noopener">WhatsApp: (17) 98181-7159 ↗</a><a class="social" href="https://instagram.com/amandita_casa_do_acai" target="_blank" rel="noopener">Instagram @amandita_casa_do_acai ↗</a></div></div></section>
+</main>
+
+<footer><div class="container footer-grid"><div class="brand-footer"><img src="assets/logo.jpg" alt="Casa do Açaí"><p>Açaí, cupuaçu e sabores irresistíveis.</p></div><div><strong>Explorar</strong><a href="#cardapio">Cardápio</a><a href="#monte">Monte seu açaí</a><a href="#combos">Combos</a></div><div><strong>Fale com a gente</strong><a href="https://wa.me/5517981817159" target="_blank">(17) 98181-7159</a><a href="https://instagram.com/amandita_casa_do_acai" target="_blank">Instagram</a></div></div><div class="copyright">© 2026 Casa do Açaí Amandita. Site desenvolvido para a marca.</div></footer>
+
+<div class="cart-overlay" id="cartOverlay"><aside class="cart"><div class="cart-head"><div><span class="kicker">SEU PEDIDO</span><h3>Seu carrinho</h3></div><button id="closeCart">×</button></div><div id="cartItems" class="cart-items"><div class="empty">Seu carrinho está vazio.<br><small>Escolha algo delicioso no cardápio.</small></div></div><div class="cart-foot"><div><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div><button id="checkout" class="checkout">Enviar pedido pelo WhatsApp ↗</button><button id="clearCart" class="clear">Limpar pedido</button></div></aside></div>
+<div class="toast" id="toast">Adicionado ao pedido ✓</div>
+<script src="script.js"></script>
+</body></html>
